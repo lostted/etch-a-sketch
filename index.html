@@ -1,0 +1,23 @@
+<html dragable="false">
+	<head>
+		<title>Sketch-a-Zhaba</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ruji-s-handwriting-font-v-2-0" type="text/css"/>
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/code-new-roman" type="text/css"/> 
+	</head>
+	<body dragable="false">
+		<div id="container" dragable="false">
+			<div id="title">Sketch-a-Zhaba</div>
+			<div id="toolbarLeft">
+				<div id="generateFieldText">Select new matrix range (2-100).</div>
+				<input type="number" min="2" max="100" value="16">
+				<input type="button" id="newFieldGenButton" value="generate()">
+			</div>
+			<div id="field" draggable="false"></div>
+			<div id="toolbarRight">
+				<input type="color">
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="script.js"></script>

@@ -1,0 +1,73 @@
+html {
+	color: #EDD78C;
+}
+body {
+	width: 97vw;
+	height: 97vh;
+	background-color: #6750EB;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 1fr 77vw 1fr;
+	grid-template-rows: 1fr 77vh 1fr;
+	grid-template-areas: 
+	 "header header header"
+	 "toolbarLeft field toolbarRight";
+}
+#title {
+	grid-area: header;
+	font-family: "RujisHandwritingFontv20Medium"; 
+	justify-self: center;
+	align-self: center;
+	font-size: 6vmin;
+}
+#toolbarLeft {
+	grid-area: toolbarLeft;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 5px
+}
+#generateFieldText {
+	font-family: 'CodeNewRomanRegular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.7vmin;
+}
+#toolbarRight {
+	grid-area: toolbarRight;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5px;
+}
+#field {
+	grid-area: field;
+	align-self: center;
+	user-select: none;
+	background-color: #fff;
+	border: 5px solid #EDD78C;
+	margin: -5px;
+}
+
+input[type="number"] {
+	border: 5px solid #EDD78C;
+	box-shadow : none;  
+	outline: none;
+}
+input[type="color"] {
+	border: 5px solid #EDD78C;
+	width: 12vmin;
+	height: 12vmin;
+}
+input[type="color"]:hover {
+	background-color: #EDD78C;
+}
+input[type="button"] {
+	border: 5px solid #EDD78C;
+	margin-top: 5px;
+}
+input[type="button"]:hover {
+	background-color: #EDD78C;
+}
