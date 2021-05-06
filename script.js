@@ -38,13 +38,18 @@ function generateField() {
 		
 	field.appendChild(parentDiv);
 
+	let colour;
+
 	const nodes = document.querySelectorAll(".nodes");
 	nodes.forEach( (node) => {
 		node.addEventListener("mousemove", (node) => {
 			if (node.buttons == true) node.target.style.backgroundColor = colour;
 		});
 		node.addEventListener("mousedown", (node) => {
-			colour = document.querySelector("input[type=\"color\"]").value;
+			if (document.querySelector("#randColour").checked == true) {
+				colour = `rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)})`;
+			}
+			else colour = document.querySelector("input[type=\"color\"]").value;
 			node.target.style.backgroundColor = colour;
 		});
 	});

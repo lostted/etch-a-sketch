@@ -9,13 +9,18 @@
 		<div id="container" dragable="false">
 			<div id="title">Sketch-a-Zhaba</div>
 			<div id="toolbarLeft">
-				<div id="generateFieldText">Select new matrix range (2-100).</div>
+				<div class="toolbarText">Matrix size (1-100).</div>
 				<input type="number" min="2" max="100" value="16">
 				<input type="button" id="newFieldGenButton" value="generate()">
 			</div>
 			<div id="field" draggable="false"></div>
 			<div id="toolbarRight">
+				<div class="toolbarFieldText">Colour:</div>
 				<input type="color">
+				<div id="inline">
+					<input type="checkbox" id="randColour"> 
+					<div class="toolbarText">Random colour mode</div>
+				</div>
 			</div>
 		</div>
 	</body>
